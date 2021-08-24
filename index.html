@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=deivce-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ddf8e48103.js" crossorigin="anonymous"></script>
+    <title>youtube clone</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+    <!-- Video Player -->
+    <section class="player">
+      <iframe width="100%" height="500px" src="https://www.youtube.com/embed/cGC5TESLo9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <!-- Video Info-->
+    <section class="info">
+      <div class="metadata">
+        <ul class="hastags">
+          <li>#free</li>
+          <li>#copyrights</li>
+          <li>#video</li>
+        </ul>
+        <div class="titleAndButton">
+          <span>
+            [저작권 없는 영상] #1 서울 드론
+          </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <div class="views">
+          <span class="views">조회수 9,144회</span>
+          <span class="day">2019. 9. 2.</span>
+        </div>
+      </div>
+      <ul class="actions">
+        <li>
+          <button><i class="fas fa-thumbs-up"></i><span>100K</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-thumbs-down"></i><span>1,092</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-share"></i><span>Share</span></button>
+        </li>
+        <li>
+          <button><i class="fas fa-plus"></i><span>Save</span></button>
+        </li>
+        <li>
+          <button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button>
+        </li>
+      </ul>
+      <div class="channel">
+        <div class="metadata">
+          <img src="image/external-content.duckduckgo.com.jpg" alt="profile" />
+          <div class="info">
+            <span class="channel">심플하다 스튜디오-Simplehada Studio</span>
+            <span class="subscribers">구독자 3.77천명</span>
+          </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+      </div>
+    </section>
+    <section class="upNext">
+      <span class="title">Up Next</span>
+      <ul>
+        <li class="item">
+          <img src="image/sumnail1.jpg" alt="">
+          <div class="info">
+            <span class="title">video1</video></span>
+            <span class="channel">심플하다 스튜디오-Simplehada Studio</span>
+            <span class="views">100K</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">          
+          <img src="image/sumnail2.jpg" alt="">
+          <div class="info">
+            <span class="title">video2</span>
+            <span class="channel">심플하다 스튜디오-Simplehada Studio</span>
+            <span class="views">200K</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">          
+          <img src="image/sumnail3.jpg" alt="">
+          <div class="info">
+            <span class="title">video3</span>
+            <span class="channel">심플하다 스튜디오-Simplehada Studio</span>
+            <span class="views">1,203</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+    </section>  
+  </body>
+</html>
+
