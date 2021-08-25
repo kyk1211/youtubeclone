@@ -25,6 +25,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 button,
 button:focus {
   border: none;
@@ -79,7 +83,7 @@ header .icons .fa-search {
 
 .info .metadata .hashtags li {
   list-style: none;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .info .metadata .titleAndButton {
@@ -92,14 +96,78 @@ header .icons .fa-search {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .info .metadata .titleAndButton .moreBtn {
   height: 100%;
 }
 
-.info .views {
+.info .metadata .views {
   font-size: var(--font-small);
   color: var(--gray-dark-color);
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 16px 0px;
+}
+
+.info .actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--gray-dark-color);
+}
+
+.info .actions button i {
+  margin: 0 auto;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.info .actions button i.active {
+  color: var(--blue-color);
+}
+
+/* Channel Description */
+.info .channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-light-color);
+  border-bottom: 1px solid var(--gray-light-color);
+}
+
+.info .channel .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .channel .metadata img {
+  width: var(--profile-size);
+  height: var(--profile-size);
+  border-radius: 50%;
+}
+
+.info .channel .metadata .info .name {
+  font-size: var(--font-medium);
+}
+
+.info .channel .metadata .info .subscribers {
+  font-size: var(--font-small);
+  color: var(--gray-dark-color);
+}
+
+.info .channel .subscribe {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
 }
